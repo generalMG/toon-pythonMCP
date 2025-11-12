@@ -31,7 +31,7 @@ def toon_encode(
     Args:
         data: The JSON data to encode into TOON format (objects, arrays, primitives)
         indent: Number of spaces per indentation level (default: 2)
-        delimiter: Delimiter for array values - comma (','), tab ('\\t'), or pipe ('|'). Default: comma
+        delimiter: Delimiter for array values - comma (','), tab ('\\t'), or pipe ('|')
 
     Returns:
         TOON formatted string
@@ -66,7 +66,7 @@ def toon_decode(
     Args:
         toon_string: The TOON formatted string to decode
         indent: Expected number of spaces per indentation level (default: 2)
-        strict: Enable strict validation during decoding (default: True). When False, allows lenient parsing
+        strict: Enable strict validation during decoding (default: True)
 
     Returns:
         Decoded data as Python objects (dict, list, str, int, float, bool, or None)
