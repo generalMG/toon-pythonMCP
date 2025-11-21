@@ -1,6 +1,6 @@
 """TOON MCP Server - FastMCP server for TOON format encoding and decoding."""
 
-from typing import Any
+from typing import Any, Dict, List, Union
 
 from fastmcp import FastMCP
 
@@ -59,7 +59,7 @@ def toon_decode(
     toon_string: str,
     indent: int = 2,
     strict: bool = True,
-) -> dict[str, Any] | list[Any] | str | int | float | bool | None:
+) -> Union[Dict[str, Any], List[Any], str, int, float, bool, None]:
     """
     Decode TOON format string back into JSON data.
 
